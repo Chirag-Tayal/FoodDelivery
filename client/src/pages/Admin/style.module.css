@@ -1,0 +1,56 @@
+.allOrder{
+display: flex;
+flex-direction: column;
+gap: 15px;
+
+& h1{
+    text-align: center;
+    margin: 20px 0;
+    border-bottom: 2px solid black;
+}
+
+& table{
+    & th {
+        border: solid 1px rgb(130, 130, 130);
+    }
+    & td {
+        border-bottom: solid 1px rgb(130, 130, 130);
+        border-right: solid 1px rgb(130, 130, 130);
+    }
+}
+}
+
+.orderItem{
+    border: 2px solid rgb(237, 5, 5);
+    border-left: 2px solid rebeccapurple;
+    text-align: center;
+}
+
+
+.mainContainer{
+    display: flex;
+    flex-direction: column;
+
+    & h1{
+        text-align: center;
+
+    }
+
+    .details{
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+
+        .detail{
+            display: flex; 
+            border: solid 2px gainsboro;
+            justify-content: space-between;
+            align-items: center;
+            & img{
+                width: 200px;
+                height: 200px;
+                object-fit: cover;
+            }
+        }
+    }
+}

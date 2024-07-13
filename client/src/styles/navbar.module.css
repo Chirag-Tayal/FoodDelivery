@@ -1,0 +1,157 @@
+.main {
+    width: 100%;
+    background-color: #94C9A9;
+    padding: 0 30px;
+    height: 70px;
+    display: flex; 
+    border-bottom: 1px solid #000;
+    justify-content: space-between;
+    align-items: center;
+    @media (max-width:850px) {
+        padding: 0 10px; 
+        
+        
+    }
+}
+.brand {
+    & img {
+        /* border: solid 1px black; */
+        width: 180px;
+        height: 60px;
+        object-fit: cover;
+    }
+}
+.menu {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+
+    @media (max-width:850px) {
+        position: fixed; /* Change to fixed */
+        top: 70px; 
+        left: -100%; 
+        height: 100vh;
+        width: 100vw; 
+               background-color: aliceblue;
+       justify-content: center;
+       flex-direction: column;
+        
+    }
+
+    & a {
+        transition: .3s all ease-in-out;
+        font-size: 1rem;
+        &:hover {
+            color: ghostwhite;
+        }
+    }
+
+    & button{
+        transition: .3s all ease-in-out;
+        padding: 4px 20px;
+        border: none;
+        border-radius: 4px;
+
+        &:hover{
+            background-color: springgreen;
+            border: none;
+        }
+        
+    }
+
+    
+
+}
+.mobileBtn{
+    font-size: 2rem;
+    display: none;
+
+    @media (max-width:850px) {
+        display: inline;
+        
+    }
+
+}
+.mobileView{
+    left: 0;
+}
+
+
+/* Footer style */
+
+.footerMain{
+    border-top: 1px solid #000;
+    padding: 50px 30px;
+    background-image: linear-gradient( #94C9A9, #C6ECAE ,#94C9A9);
+    display: flex;
+    justify-content: space-between;
+    & img{
+        width: 190px;
+    }
+
+    & li {
+        list-style-type:  none;
+    }
+    
+    @media (max-width:850px) {
+        padding: 50px 10px; 
+        flex-direction: column;
+        justify-content: center;
+        
+        
+    }
+
+    & > div{
+
+        &>ul {
+            &> li {
+                list-style-type: square;
+
+                &>a{
+                    text-decoration: none;
+                    color: #FE5F55;
+                    transition: .5s all ease-in-out;
+                    font-size: 1.2rem;
+                    font-weight: 600;
+
+                    &:hover{
+                        color: black;
+                    }
+                }
+            }
+        }
+    }
+}
+
+.logout{
+    position: relative;
+
+    & >img{
+        border-radius: 50%;
+        width: 40px;
+        height: 40px;
+        border: solid 1px orangered;
+    }
+   
+
+    &:hover .user {
+        display: block;
+    }
+    
+    .user {
+        background-color: #94C9A9;
+        border-radius: 12px;
+        border: solid 2px gray;
+        position: absolute;
+        width: 200px;
+        top: 10px;
+        right:90%;
+        display: none;
+        padding: 10px 30px;
+    }
+    
+}
+
+.user{
+
+}

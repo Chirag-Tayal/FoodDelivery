@@ -1,0 +1,76 @@
+.mainContainer{
+    /* height: 60vh; */
+    display: flex; 
+    align-items: center;
+    justify-content: flex-start;
+    flex-direction: column;
+    gap: 20px;
+    padding: 20px;
+
+    .categories{
+        display: flex;
+        gap: 15px;
+
+        & button{
+            padding: 4px 8px;
+            background-color: #94C9A9;
+            color: rgb(0, 0, 0);
+            border: none;
+            border-radius: 8px;
+            cursor: pointer;
+        }
+        
+    }
+    .foodItems{
+        display: flex;
+        gap: 20px;
+        justify-content: space-between;
+        flex-wrap: wrap;
+    }
+}
+
+.foodItemContainer{
+    /* height: 300px; */
+    border: solid 2px gray;
+    background-color: #94C9A9;
+    position: relative;
+    border-radius: 12px;
+    height: 300px;
+    width: 220px;
+    & img{
+        height: 200px;
+        width: 100%;
+        object-fit: cover;
+        border-radius: 12px;
+    
+    }
+    .price{
+        position: absolute;
+        width: 60px;
+        background-color: #94C9A9;
+        height: 60px;
+        align-items: center;
+        display: flex;
+        border-radius: 50%;
+        justify-content: center;
+        top: 0;
+
+    }
+    .foodItemDetails {
+        padding: 4px;
+        text-align: center; /* Center align other content */
+    
+        & p {
+            font-size: 1.1rem;
+            text-align: left; /* Align paragraphs to the left */
+        }
+    
+        & button {
+            font-size: 16px;
+            padding: 2px;
+            margin: 0 auto; /* Center align the button */
+            display: block; /* Ensure the button takes full width */
+        }
+    }
+    
+}

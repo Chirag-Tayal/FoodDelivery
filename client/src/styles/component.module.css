@@ -1,0 +1,144 @@
+.itemContainer{
+    position: relative;
+    border-radius: 8px;
+    width: 250px;
+    height: 350px;
+    background-color: #885053;
+    transition: .3s all ease-in;
+    &:hover{
+        box-shadow: 1px 0 2px 2px ;
+    }
+    @media (max-width:850px) {
+       width: 100%;
+        
+        
+    }
+    & > img{
+        width: 100%;
+        object-fit: contain;
+        border-radius: 8px 8px 0 0 ;
+    }
+
+    .wishList {
+        position: absolute;
+        font-size: 2rem;
+        top:10px;
+        left:10px;
+
+        & > svg {
+            transition: .3s all ease-out;
+           color: #FE5F55;
+        }
+    }
+
+    .price{
+        position: absolute;
+        top: -20px;
+        right: -5px;
+        box-shadow: 1px 1px 1px 1px gray;
+        border-radius: 50%;
+        height: 56px;
+        width: 56px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: #885053;
+        background-color: gainsboro;
+
+        &:hover{
+            box-shadow: 1px 1px 2px 2px gray;
+        }
+    }
+
+    & > h3{
+        text-align: center;
+        color: gainsboro;
+        
+        & span{
+            font-size: 1rem;
+        }
+    }
+
+    & > button {
+        display: flex; 
+        align-items: center;
+        justify-content: center;  
+        border: none;
+        margin: 10px auto;
+        width: 80%;
+        color: #C6ECAE;
+        height: 40px;
+        font-size: 1rem;
+        border-radius: 8px;
+        transition: .3s all ease-out;
+        background-color: #FE5F55;
+
+        &:hover{
+            background-color: #C6ECAE;
+            color: #FE5F55;
+        }
+    }
+}
+
+/* service cmponents */
+.service{ 
+    background-image: linear-gradient( #777DA7, #C6ECAE , #777DA7);
+    padding: 100px 30px;
+    width: 100%;
+    display: flex;
+    
+    @media (max-width:850px) {
+        padding: 50px 10px;
+        height: 100%;
+        flex-direction: column;
+        gap: 30px;
+    }
+    .img{
+        display: flex;
+        flex:6;
+        & > img{
+            width: 100%;
+    
+        }
+    
+        @media (max-width:850px) { 
+            flex:12;
+            
+            & > img{
+                width: 100%;
+    
+            }
+            
+            
+        }
+    
+    }
+
+    .body{
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        flex:6;
+        @media (max-width:850px) { 
+            flex:12;
+            }
+        
+            & > h1{
+                color:#885053;
+            }
+        & > button{
+            width: 200px;
+            height: 40px;
+            border-radius: 6px;
+            border: none;
+            background-color: #C6ECAE;
+            
+    
+            &:hover{
+                background-color: #777DA7;
+            }
+    
+        }
+    }
+    
+}
